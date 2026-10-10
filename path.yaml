@@ -1,0 +1,97 @@
+# Preparation path. Keep its course registration draft until content is ready.
+apiVersion: content.astrona.io/v1alpha1
+kind: TrainingPath
+metadata:
+  id: ATP012
+  slug: certified-argo-project-associate-capa
+  title: Certified Argo Project Associate (CAPA)
+  description: 'Preparation path for CAPA: one training series per curriculum domain. Content authoring
+    is planned.'
+  version: 0.1.0
+  language: en
+  authors:
+  - name: Paris Nakita Kejser
+    email: paris@astrona.io
+    company: Astrona.io
+  tags:
+  - CAPA
+  - Certification Preparation
+  license: Apache-2.0
+spec:
+  audience: Learners preparing for Certified Argo Project Associate (CAPA).
+  difficulty: Beginner
+  examPreparation:
+    enabled: true
+    title: Certified Argo Project Associate (CAPA)
+    officialSyllabusUrl: https://training.linuxfoundation.org/certification/certified-argo-project-associate-capa/
+    examId: CAPA
+    provider: CNCF / The Linux Foundation
+  prerequisites:
+  - Basic command-line knowledge and familiarity with the subject of the exam.
+  - A computer capable of running the environments selected during content authoring.
+  learningOutcomes:
+  - Prepare for the Argo Workflows domain.
+  - Prepare for the ARGO CD domain.
+  - Prepare for the Argo Rollouts domain.
+  - Prepare for the Argo Events domain.
+  stages:
+  - id: ATP012-STG001
+    title: Argo Workflows
+    description: Prepare for Argo Workflows.
+    examDomain: Argo Workflows
+    weight: 36
+    learningOutcomes:
+    - Understand Argo Workflow Fundamentals
+    - Generating and Consuming Artifacts
+    - Understand Argo Workflow Templates
+    - Understand the Argo Workflow Spec
+    - Work with DAG (Directed-Acyclic Graphs)
+    - Run Data Processing Jobs with Argo Workflows
+    content:
+    - ref: ATS060
+      repository: https://github.com/astrona-io/ATS060
+      path: .
+      version: 0.1.0
+  - id: ATP012-STG002
+    title: ARGO CD
+    description: Prepare for ARGO CD.
+    examDomain: ARGO CD
+    weight: 34
+    learningOutcomes:
+    - Understand Argo CD Fundamentals
+    - Synchronize Applications Using Argo CD
+    - Use Argo CD Application
+    - Configure Argo CD with Helm and Kustomize
+    - Identify Common Reconciliation Patterns
+    content:
+    - ref: ATS061
+      repository: https://github.com/astrona-io/ATS061
+      path: .
+      version: 0.1.0
+  - id: ATP012-STG003
+    title: Argo Rollouts
+    description: Prepare for Argo Rollouts.
+    examDomain: Argo Rollouts
+    weight: 18
+    learningOutcomes:
+    - Understand Argo Rollouts Fundamentals
+    - Use Common Progressive Rollout Strategies
+    - Describe Analysis Template and AnalysisRun
+    content:
+    - ref: ATS062
+      repository: https://github.com/astrona-io/ATS062
+      path: .
+      version: 0.1.0
+  - id: ATP012-STG004
+    title: Argo Events
+    description: Prepare for Argo Events.
+    examDomain: Argo Events
+    weight: 12
+    learningOutcomes:
+    - Understand Argo Events Fundamentals
+    - Understand Argo Event Components and Architecture
+    content:
+    - ref: ATS063
+      repository: https://github.com/astrona-io/ATS063
+      path: .
+      version: 0.1.0

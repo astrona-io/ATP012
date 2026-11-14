@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://astrona.io/courses/certified-argo-project-associate-capa">
+    <img src="https://astrona.io/courses/certified-argo-project-associate-capa/banner.svg" alt="Certified Argo Project Associate: exam domains on Astrona" width="100%">
+  </a>
+</p>
+
 # ATP012 — Certified Argo Project Associate (CAPA)
 
 One stage per exam domain, connected through `path.yaml` to a training series
